@@ -1,7 +1,7 @@
 
 # Moiré Pattern Detection Optimization
 
-This project builds upon the methodologies outlined in "Moiré Pattern Detection Using Wavelet Decomposition and Convolutional Neural Network," introducing key optimizations to address challenges encountered with large datasets and complex image backgrounds.
+This project builds upon the methodologies outlined in ["Moiré Pattern Detection Using Wavelet Decomposition and Convolutional Neural Network,"](https://ieeexplore.ieee.org/document/8628746)  introducing key optimizations to address challenges encountered with large datasets and complex image backgrounds.
 
 ## Key Challenges & Solutions
 
@@ -28,9 +28,9 @@ Revisited the previously discarded HH band information from the Wavelet decompos
 
 **Solution 2**: A multi-faceted approach was adopted to preserve pattern details:
 	-	**Cropping Strategies**:
-	-	 - **Image Crop**: Center cropping to provide a standard image processing technique.
-  - **CropBrightest**: Brightness-based cropping to focus on the brightest areas of images, where pattern details are most pronounced, thereby enhancing pattern preservation.
-- **Optimized Image Processing**: Investigated various interpolation methods and experimented with larger image sizes, constrained by computational resources, to minimize pattern degradation.
+	 - **Image Crop**: Center cropping to provide a standard image processing technique.
+  	- **CropBrightest**: Brightness-based cropping to focus on the brightest areas of images, where pattern details are most pronounced, thereby enhancing pattern preservation.
+	- **Optimized Image Processing**: Investigated various interpolation methods and experimented with larger image sizes, constrained by computational resources, to minimize pattern degradation.
 
 
 
@@ -93,3 +93,6 @@ python testModel.py <positiveTestImagePath> <negativeTestImagePath> [<threshold>
 
 - The saved CNN model will be loaded automatically.
 - Adjust the `load_model` function in the script if you need to use a different model.
+
+
+
